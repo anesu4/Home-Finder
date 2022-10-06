@@ -7,14 +7,15 @@ import Results from './components/results/results';
 function App() {
   return (
     <div className="App">
-      // HeatMap Section
-      <Heatmap></Heatmap>
+      {/* HeatMap Section */}
+      <h1> HelloWorld</h1>
+      <Heatmap />
 
-      // Get Recommendations
-      <Recommendations></Recommendations>
+      {/* Get Recommendations */}
+      <Recommendations />
 
-      // Get Results
-      <Results></Results>
+      {/* Get Results */}
+      <Results />
 
     </div>
   );

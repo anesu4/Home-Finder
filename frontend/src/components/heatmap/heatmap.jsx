@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { MapContainer, GeoJSON, TileLayer } from 'react-leaflet';
 import mapData from '../data/suburb-nsw.json';
-// import Legend from './Legend';
+import Legend from './legend';
 import "leaflet/dist/leaflet.css";
-import './Map.css';
+import './map.css';
 
 class Heatmap extends Component {
     state = { color: "#ffff00" };
