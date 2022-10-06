@@ -5,7 +5,6 @@ import Container from 'react-bootstrap/Container';
 import Header from './components/header';
 import Heatmap from './components/heatmap/heatmap';
 import Recommendations from './components/recommendations/recommendations';
-import Results from './components/results/results';
 import Footer from './components/footer';
 
 function App() {
@@ -22,9 +21,7 @@ function App() {
       <Container>
         <Recommendations />
       </Container>
-
       
-
       <Footer />
     </div>
   );
