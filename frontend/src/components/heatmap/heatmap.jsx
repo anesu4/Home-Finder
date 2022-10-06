@@ -60,6 +60,31 @@ class Heatmap extends Component {
     render() {
       return (
         <div>
+
+            {/* <MapContainer
+                center={[ -33.8688, 151.2093 ]}
+                zoom={10}
+                scrollWheelZoom={false}
+                style={{ height: "100vh", width: "100%" }}
+            >
+                <TileLayer
+                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                />  
+                <GeoJSON
+                    data={mapData}
+                    style={this.countryStyle}
+                    onEachFeature={this.onEachCountry}
+                />
+                <Legend />
+            </MapContainer>
+        </div>
+        );
+    }
+}
+
+export default Heatmap; */}
+
           {/* <h1 style={{ textAlign: "center" }}>My Map</h1> */}
           <MapContainer style={{ height: "80vh" }} zoom={13} center={[-33.86, 151.20]}>
             <TileLayer
