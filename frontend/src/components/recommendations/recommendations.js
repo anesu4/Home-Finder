@@ -1,24 +1,39 @@
-import React from 'react';
-// import './Legend.css';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+// import React from 'react';
+import React, { useState } from "react";
+import Results from '../results/results';
+import getRecommendations from '../../util/realestateUtil';
 
+import { Button, Container, Row, Col } from "react-bootstrap";
 
-const Recommendations = () => {
+function Recommendations(props) {
+    const results = [];
+
+    const [recommendations, setRecommendations] = useState('r');
+
     return (
-        <div className="recommendations">
-            <Container>
-                <Row>
-                    <Col xs={6} md={4}>
-                        <p1>Get Personalised Recommendations</p1>
-                    </Col>
-                    <Col xs={6} md={4}>
-                        <button className="recommendations-button">Get Recommendations</button>
-                    </Col>
-                </Row>
-            </Container>
+        <div>
+            <div>
+                <Container>
+                    <Row>
+                        <Col xs={6} md={4}>
+                            <p1>Get Personalised Recommendations</p1>
+                        </Col>
+                        <Col xs={6} md={4}>
+                            {/* <button className="recommendations-button">Get Recommendations</button> */}
+                            <Button className="blue-Button" onClick={ () => getRecommendations(setRecommendations)}>Get Recommendation</Button>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
+            <div>
+                {/* Get Results */}
+                <Container>
+                    <Results result={results}/>
+                </Container>
+            </div>
         </div>
+        
     );
 }
 export default Recommendations;

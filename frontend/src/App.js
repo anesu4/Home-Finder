@@ -1,6 +1,3 @@
-// import logo from './logo.svg';
-import './App.css';
-
 // Import Bootstrap
 import Container from 'react-bootstrap/Container';
 
@@ -13,23 +10,20 @@ import Footer from './components/footer';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Header />
 
       {/* HeatMap Section */}
-      <Container className='heatmap'>
+      <Container>
         <Heatmap />
       </Container>
 
       {/* Get Recommendations */}
-      <Container className='recommendations'>
+      <Container>
         <Recommendations />
       </Container>
 
-      {/* Get Results */}
-      <Container className='results'>
-        <Results />
-      </Container>
+      
 
       <Footer />
     </div>
