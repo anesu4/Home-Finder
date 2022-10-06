@@ -1,5 +1,4 @@
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import { Button, Container, Row, Col, Card, Carousel } from "react-bootstrap";
 // import {useNavigate} from "react-router-dom";
 
 function ListingCard(listing) {
@@ -7,7 +6,39 @@ function ListingCard(listing) {
 
   return (
     <Card style={{ width: '18rem', display: 'inline-block' }}>
-      <Card.Img variant="left" style={{ width: '100%', height: '40%' }} src={listing.listing.images[0]} />
+      {/* <Card.Img variant="left" style={{ width: '100%', height: '40%' }} src={listing.listing.images[0]} /> */}
+      <Carousel>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={listing.listing.images[0]}
+            alt="First slide"
+          />
+          <Carousel.Caption>
+          </Carousel.Caption>
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={listing.listing.images[0]}
+            alt="Second slide"
+          />
+          <Carousel.Caption>
+          </Carousel.Caption>
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={listing.listing.images[0]}
+            alt="Third slide"
+          />
+          <Carousel.Caption>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+
       <Card.Body>
         <Card.Title>{listing.listing.address}</Card.Title>
         <Card.Body>
