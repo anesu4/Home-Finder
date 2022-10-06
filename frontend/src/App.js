@@ -23,10 +23,7 @@ function App() {
         <Recommendations />
       </Container>
 
-      {/* Get Results */}
-      <Container>
-        <Results />
-      </Container>
+      
 
       <Footer />
     </div>

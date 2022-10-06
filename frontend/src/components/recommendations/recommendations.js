@@ -1,16 +1,15 @@
 // import React from 'react';
 import React, { useState } from "react";
 import Results from '../results/results';
+import getRecommendations from '../../util/realestateUtil';
 
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-
-const results = [];
-
-const [recommendations, setRecommendations] = useState('r');
+import { Button, Container, Row, Col } from "react-bootstrap";
 
 function Recommendations(props) {
+    const results = [];
+
+    const [recommendations, setRecommendations] = useState('r');
+
     return (
         <div>
             <div>
@@ -21,7 +20,7 @@ function Recommendations(props) {
                         </Col>
                         <Col xs={6} md={4}>
                             {/* <button className="recommendations-button">Get Recommendations</button> */}
-                            <button className="blue-Button" onClick={ () => getRecommendations(setRecommendations)}>Get Recommendation </button>
+                            <Button className="blue-Button" onClick={ () => getRecommendations(setRecommendations)}>Get Recommendation</Button>
                         </Col>
                     </Row>
                 </Container>
