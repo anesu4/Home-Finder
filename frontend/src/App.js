@@ -1,9 +1,8 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
 // Import Bootstrap
 import Container from 'react-bootstrap/Container';
-import Button from 'react-bootstrap/Button';
 
 // Import Components
 import Header from './components/header';
