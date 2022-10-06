@@ -54,7 +54,7 @@ const listings = [
     
 ]
 
-function Results () {
+function Results (result) {
     return (
         <div>
             <h1>Results</h1>
