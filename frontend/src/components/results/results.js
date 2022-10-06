@@ -1,7 +1,7 @@
 import React from 'react';
 // Import Components
 import Heatmap from '../heatmap/heatmap';
-import GridListingCard from './gridListingCard';
+import GridListingCard from 'gridListingCard';
 // Import Bootstrap
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
