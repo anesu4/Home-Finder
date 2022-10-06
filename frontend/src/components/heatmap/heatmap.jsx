@@ -15,7 +15,7 @@ class Heatmap extends Component {
     }
 
     countryStyle = {
-      fillColor: "red",
+      fillColor: "green",
       fillOpacity: 1,
       color: "black",
       weight: 2,

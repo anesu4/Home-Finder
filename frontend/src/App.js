@@ -1,5 +1,6 @@
 // Import Bootstrap
 import Container from 'react-bootstrap/Container';
+import './App.css';
 
 // Import Components
 import Header from './components/header';
@@ -9,7 +10,7 @@ import Footer from './components/footer';
 
 function App() {
   return (
-    <div>
+    <div className='App'>
       <Header />
 
       {/* HeatMap Section */}
