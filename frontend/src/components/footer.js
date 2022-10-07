@@ -5,7 +5,7 @@ function Footer() {
     // Footer Component
     <footer className="footer">
       <Container>
-        <p>© 2020 Company, Inc.</p>
+        <p>© 2020 Home Finder, Inc.</p>
       </Container>
     </footer>
   );
