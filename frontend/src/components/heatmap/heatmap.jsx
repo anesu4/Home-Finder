@@ -72,11 +72,11 @@ class Heatmap extends Component {
               onEachFeature={this.onEachCountry}
             />
           </MapContainer>
-          {/* <input
+          <input
             type="color"
             value={this.state.color}
             onChange={this.colorChange}
-          /> */}
+          />
 
           <Legend />
         </div>
