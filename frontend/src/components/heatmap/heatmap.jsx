@@ -56,6 +56,32 @@ class Heatmap extends Component {
     colorChange = (event) => {
       this.setState({ color: event.target.value });
     };
+
+    render(suburbsAndAverages) {
+      return (
+        <div>
+          {/* <h1 style={{ textAlign: "center" }}>My Map</h1> */}
+          <MapContainer style={{ height: "80vh" }} zoom={13} center={[-33.86, 151.20]}>
+            <TileLayer
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            <GeoJSON
+              style={this.countryStyle}
+              data={mapData.features}
+              onEachFeature={this.onEachCountry}
+            />
+          </MapContainer>
+          {/* <input
+            type="color"
+            value={this.state.color}
+            onChange={this.colorChange}
+          /> */}
+
+          <Legend />
+        </div>
+      );
+    }
   
     render() {
       return (

@@ -1,14 +1,14 @@
 // import React from 'react';
 import React, { useState } from "react";
+import { Button, Container, Row, Col } from "react-bootstrap";
 import Results from '../results/results';
-import getRecommendations from '../../util/RealestateUtil';
-
-import { Button, Container, Row, Col, Form } from "react-bootstrap";
+import RealestateUtil from "../../util/RealestateUtil";
+const realestateUtil = new RealestateUtil();
 
 function Recommendations(props) {
-    const results = [];
+    const [results, setResults] = useState(null);
 
-    const [recommendations, setRecommendations] = useState('r');
+    // const [recommendations, setRecommendations] = useState('r');
 
     return (
         <div>
@@ -248,7 +248,8 @@ function Recommendations(props) {
                 <Row>
                     <Col xs={6} md={4}>
                         <Row>
-                            <Button className="blue-Button" onClick={ () => getRecommendations(setRecommendations)}>Get Recommendation</Button>
+                            {/* <Button className="blue-Button" onClick={ () => getRecommendations(setRecommendations)}>Get Recommendation</Button> /*}
+                            <Button className="blue-Button" onClick={ () => realestateUtil.getRecommendations(setResults)}>Get Recommendation</Button>
                         </Row>
                     </Col>
 
