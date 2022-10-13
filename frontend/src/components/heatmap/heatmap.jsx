@@ -15,7 +15,7 @@ class Heatmap extends Component {
     }
 
     countryStyle = {
-      fillColor: "red",
+      fillColor: "green",
       fillOpacity: 1,
       color: "black",
       weight: 2,
@@ -98,11 +98,11 @@ class Heatmap extends Component {
               onEachFeature={this.onEachCountry}
             />
           </MapContainer>
-          {/* <input
+          <input
             type="color"
             value={this.state.color}
             onChange={this.colorChange}
-          /> */}
+          />
 
           <Legend />
         </div>

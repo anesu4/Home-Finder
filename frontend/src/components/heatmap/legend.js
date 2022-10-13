@@ -9,10 +9,13 @@ const Legend = () => {
         <div className="legend">
             <Container>
                 <Row>
-                    <Col xs={6} md={4}>
+                    <Col xs={6} md={6}>
                         <p1>Get Personalised Recommendations</p1>
                     </Col>
-                    <Col xs={6} md={4}>
+
+                    {/* <div className='heatmap-vertical-line'></div> */}
+
+                    <Col xs={6} md={6}>
                         <Button className="blue-Button">Get Recommendations</Button>
                     </Col>
                 </Row>
